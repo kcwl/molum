@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="aquarius">
+      <UniqueIdentifier>{895d3d71-7411-4169-b96f-2ba82c6741b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="aquarius\qualify">
+      <UniqueIdentifier>{37453c0d-0aae-43eb-98fe-24b08ee60ff3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="qualify.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="aquarius\qualify.hpp">
+      <Filter>aquarius</Filter>
+    </ClInclude>
+    <ClInclude Include="aquarius\qualify\basic_stream.hpp">
+      <Filter>aquarius\qualify</Filter>
+    </ClInclude>
+    <ClInclude Include="aquarius\qualify\type_traits.hpp">
+      <Filter>aquarius\qualify</Filter>
+    </ClInclude>
+    <ClInclude Include="aquarius\qualify\streambuf.hpp">
+      <Filter>aquarius\qualify</Filter>
+    </ClInclude>
+    <ClInclude Include="aquarius\qualify\algorithm.hpp">
+      <Filter>aquarius\qualify</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
