@@ -1,7 +1,7 @@
 ﻿#pragma once
 #include <type_traits>
 
-namespace aquarius
+namespace molum
 {
 	template<class T, class = std::void_t<>>
 	struct has_iterator : std::false_type { };

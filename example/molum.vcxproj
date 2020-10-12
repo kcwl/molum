@@ -121,7 +121,7 @@
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpplatest</LanguageStandard>
       <FunctionLevelLinking>true</FunctionLevelLinking>
-      <AdditionalIncludeDirectories>E:\git\reflect\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)\..\include;$(ProjectDir)\..\3rd\reflect\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -145,14 +145,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="qualify.cpp" />
+    <ClCompile Include="molum.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="aquarius\qualify.hpp" />
-    <ClInclude Include="aquarius\qualify\algorithm.hpp" />
-    <ClInclude Include="aquarius\qualify\basic_stream.hpp" />
-    <ClInclude Include="aquarius\qualify\streambuf.hpp" />
-    <ClInclude Include="aquarius\qualify\type_traits.hpp" />
+    <ClInclude Include="..\include\molum.hpp" />
+    <ClInclude Include="..\include\molum\algorithm.hpp" />
+    <ClInclude Include="..\include\molum\basic_stream.hpp" />
+    <ClInclude Include="..\include\molum\streambuf.hpp" />
+    <ClInclude Include="..\include\molum\type_traits.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,8 +1,10 @@
 ﻿#pragma once
 #include <string>
-#include <aquarius/reflection.hpp>
+#include <algorithm>
+#include <reflect.hpp>
 
-namespace aquarius
+
+namespace molum
 {
 	namespace detail
 	{
@@ -26,10 +28,14 @@ namespace aquarius
 			streambuf()
 				: wpos_(0)
 				, rpos_(0)
-				, buffer_(buffer_capacity, T{}){ }
+				, buffer_(buffer_capacity, T{})
+			{
+			}
 
 			streambuf(size_type size)
-				: buffer_(size, T{}) { }
+				: buffer_(size, T{})
+			{
+			}
 
 			streambuf(const char* val, size_type length)
 				: wpos_(0)

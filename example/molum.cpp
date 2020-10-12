@@ -2,9 +2,7 @@
 //
 
 #include <iostream>
-#include "aquarius/qualify.hpp"
-
-using namespace aquarius;
+#include "molum.hpp"
 
 struct B
 {
@@ -33,7 +31,7 @@ struct ele_t
 
 int main()
 {
-    aquarius::iostream ios;
+    molum::iostream ios;
 
     A a = A{};
     a.a = 4;
