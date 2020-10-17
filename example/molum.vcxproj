@@ -150,7 +150,11 @@
   <ItemGroup>
     <ClInclude Include="..\include\molum.hpp" />
     <ClInclude Include="..\include\molum\algorithm.hpp" />
-    <ClInclude Include="..\include\molum\basic_stream.hpp" />
+    <ClInclude Include="..\include\molum\archive.hpp" />
+    <ClInclude Include="..\include\molum\reflect\reflect_tuple.hpp" />
+    <ClInclude Include="..\include\molum\reflect\tuple_generated.hpp" />
+    <ClInclude Include="..\include\molum\reflect\tuple_size.hpp" />
+    <ClInclude Include="..\include\molum\reflect.hpp" />
     <ClInclude Include="..\include\molum\streambuf.hpp" />
     <ClInclude Include="..\include\molum\type_traits.hpp" />
   </ItemGroup>

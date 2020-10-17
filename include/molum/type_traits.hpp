@@ -10,7 +10,7 @@ namespace molum
 	struct has_iterator<T,std::void_t<typename T::iterator>> : std::true_type { };
 
 	template<class T>
-	inline static constexpr bool has_iterator_v = has_iterator <std::remove_cvref_t<T>> ::value;
+	inline static constexpr bool has_iterator_v = has_iterator<std::remove_cvref_t<T>>::value;
 
 	template<class T, class = std::void_t<>>
 	struct has_push_back : std::false_type { };

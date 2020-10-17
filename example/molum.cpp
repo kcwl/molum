@@ -21,6 +21,12 @@ struct A
     B a_;
 };
 
+#define varic_2(a,...) a
+#define varic_1(b,...) b,varic_2(...)
+#define varic(a,...) a,varic_1(...)
+
+#define var(a,b,c) a,b,c
+
 struct ele_t
 {
     int a;
@@ -31,32 +37,20 @@ struct ele_t
 
 int main()
 {
-    molum::iostream ios;
+    molum::archive_stream ios;
 
-    A a = A{};
-    a.a = 4;
-    a.b = 5;
-    a.c = 'c';
-    a.a_.a = 3;
-    a.a_.c = 7;
-    a.str = "hello";
-    a.d = {std::byte{1},std::byte{2},std::byte{3},std::byte{4}};
+    auto [var(a, b, c)] = ele_t{};
 
-    //ios << a;
-    //std::string json = "[{1,2,3},{4,5,6},{7,8,9}]";
-    std::string json = "[1,23,456,7890]";
-    //std::string json = "[{1,2,3,[4,5,6]},{1,3,5,[{7,8,9}]}]";
-    ios << json;
+    ele_t ele{1,3,3};
 
-    auto result = ios.from_json_value<std::vector<int>>();
+    auto data = molum::serialize(ele);
 
-	//std::vector<uint64_t> ui;
+    //int ele2;
 
-	//ios >> ui;
+    //auto ele2 =  molum::deserialize<ele_t>(data);
+    ele_t ele2;
+    molum::deserialize<ele_t>(data, ele2);
 
- //   auto result = ios.to_json_value<std::vector<uint64_t>>();
-
-    //std::cout << result << std::endl;
 
     std::cin.get();
     return 0;
