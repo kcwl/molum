@@ -6,7 +6,7 @@
 #include <sstream>
 #include "reflect.hpp"
 
-namespace molum
+namespace serialize
 {
 	namespace detail
 	{
