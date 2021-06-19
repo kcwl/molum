@@ -4,10 +4,9 @@
 #include <codecvt>
 #include <string>
 #include <sstream>
-#include <aquarius/reflection.hpp>
+#include "reflect.hpp"
 
-
-namespace aquarius
+namespace serialize
 {
 	namespace detail
 	{
@@ -48,7 +47,7 @@ namespace aquarius
 			std::use_facet<std::codecvt<wchar_t, char, std::mbstate_t>>(loc).in(state, str.data(), str.data() + str.size(), to_from, buff.data(), buff.data() + buff.size(), to_next);
 
 			//return std::declval<std::wstring_convert<std::codecvt_utf8<wchar_t>>>().to_bytes(std::wstring(buff.data(), buff.size()));
-			return std::wstring(buff.data(),buff.size());
+			return std::wstring(buff.data(), buff.size());
 		}
 
 		template<class T>
@@ -76,5 +75,4 @@ namespace aquarius
 			return construct_impl<T>(val, std::make_index_sequence<reflect::tuple_size<T>::value>{});
 		}
 	}
-
 }
