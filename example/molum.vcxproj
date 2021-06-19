@@ -24,6 +24,7 @@
     <ProjectGuid>{3459079a-e415-45a8-9f8b-717f6ef019c6}</ProjectGuid>
     <RootNamespace>qualify</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>serialize</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -145,18 +146,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="molum.cpp" />
+    <ClCompile Include="serialize.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\include\molum.hpp" />
-    <ClInclude Include="..\include\molum\algorithm.hpp" />
-    <ClInclude Include="..\include\molum\archive.hpp" />
-    <ClInclude Include="..\include\molum\reflect\reflect_tuple.hpp" />
-    <ClInclude Include="..\include\molum\reflect\tuple_generated.hpp" />
-    <ClInclude Include="..\include\molum\reflect\tuple_size.hpp" />
+    <ClInclude Include="..\include\serialize.hpp" />
+    <ClInclude Include="..\include\serialize\algorithm.hpp" />
+    <ClInclude Include="..\include\serialize\archive.hpp" />
     <ClInclude Include="..\include\molum\reflect.hpp" />
-    <ClInclude Include="..\include\molum\streambuf.hpp" />
-    <ClInclude Include="..\include\molum\type_traits.hpp" />
+    <ClInclude Include="..\include\serialize\streambuf.hpp" />
+    <ClInclude Include="..\include\serialize\type_traits.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

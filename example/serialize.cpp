@@ -2,7 +2,8 @@
 //
 
 #include <iostream>
-#include "molum.hpp"
+#include <vector>
+#include "serialize.hpp"
 
 struct B
 {
@@ -37,20 +38,16 @@ struct ele_t
 
 int main()
 {
-    molum::archive_stream ios;
-
-    auto [var(a, b, c)] = ele_t{};
+    serialize::streambuf buf;
 
     ele_t ele{1,3,3};
 
-    auto data = molum::serialize(ele);
+    buf << ele << ele;
 
-    //int ele2;
-
-    //auto ele2 =  molum::deserialize<ele_t>(data);
+    ele_t ele1;
     ele_t ele2;
-    molum::deserialize<ele_t>(data, ele2);
 
+    buf >> ele1 >> ele2;
 
     std::cin.get();
     return 0;

@@ -13,44 +13,32 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
     </Filter>
-    <Filter Include="include\molum">
+    <Filter Include="include\serialize">
       <UniqueIdentifier>{37453c0d-0aae-43eb-98fe-24b08ee60ff3}</UniqueIdentifier>
     </Filter>
-    <Filter Include="include\molum\reflect">
-      <UniqueIdentifier>{e62c6772-7ee0-4fdb-8b94-4fc699a50f78}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\include\molum.hpp">
+    <ClInclude Include="..\include\serialize.hpp">
       <Filter>include</Filter>
     </ClInclude>
-    <ClInclude Include="..\include\molum\algorithm.hpp">
-      <Filter>include\molum</Filter>
+    <ClInclude Include="..\include\serialize\algorithm.hpp">
+      <Filter>include\serialize</Filter>
     </ClInclude>
-    <ClInclude Include="..\include\molum\type_traits.hpp">
-      <Filter>include\molum</Filter>
+    <ClInclude Include="..\include\serialize\type_traits.hpp">
+      <Filter>include\serialize</Filter>
     </ClInclude>
-    <ClInclude Include="..\include\molum\archive.hpp">
-      <Filter>include\molum</Filter>
-    </ClInclude>
-    <ClInclude Include="..\include\molum\reflect\reflect_tuple.hpp">
-      <Filter>include\molum\reflect</Filter>
-    </ClInclude>
-    <ClInclude Include="..\include\molum\reflect\tuple_generated.hpp">
-      <Filter>include\molum\reflect</Filter>
-    </ClInclude>
-    <ClInclude Include="..\include\molum\reflect\tuple_size.hpp">
-      <Filter>include\molum\reflect</Filter>
+    <ClInclude Include="..\include\serialize\archive.hpp">
+      <Filter>include\serialize</Filter>
     </ClInclude>
     <ClInclude Include="..\include\molum\reflect.hpp">
-      <Filter>include\molum</Filter>
+      <Filter>include\serialize</Filter>
     </ClInclude>
-    <ClInclude Include="..\include\molum\streambuf.hpp">
-      <Filter>include\molum</Filter>
+    <ClInclude Include="..\include\serialize\streambuf.hpp">
+      <Filter>include\serialize</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="molum.cpp">
+    <ClCompile Include="serialize.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
